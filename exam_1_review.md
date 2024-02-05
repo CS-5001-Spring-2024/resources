@@ -209,52 +209,17 @@ print(result)
 **Question 10**
 
 ```python
-def mystery(n):
-	if n == 1:
-		return 1
-	return n + mystery(n-1)
-
-```
-
-Given the code above, answer the following questions:
-
-1. What does the function do? Provide an English explanation of the behavior.
-2. What is the base case of the function?
-3. What would the output be if the function were called as follows: mystery(-3)?
-
-**Question 11**
-
-```python
 def print_string_backward(string):
 	"""
-	Implement a recursive function that takes as input a str and prints 
-	the characters of the str *in reverse* one per line *without using a loop*. 
+	Implement a function that takes as input a str and prints 
+	the characters of the str *in reverse* one per line. 
 	"""
-	if len(string) == 1:
-		return
-
-	print_string_backward(string[1:])
-	print(string[0])
 ```
 
-Identify the bug in the function above. For full credit, your solution must (1) describe the bug in English and (2) provide the modified code that would fix the bug.
+**Question 11**
+Given a string, compute a new string where all the 'x' chars have been removed.
 
 **Question 12**
-Given a string, compute recursively a new string where all the 'x' chars have been removed.
-
-**Question 13**
-Given a non-negative int n, return the sum of its digits recursively (no loops). 
+Given a non-negative int n, return the sum of its digits. 
 
 sum\_digits(126) → 9; sum\_digits(49) → 13; sum\_digits(12) → 3
-
-**Question 14**
-Write a function called validation that behaves as follows:
-
-Function: validation
-   perform multiplication with different types
-Parameters:
-   one. an negative integer value
-   two. a positive floating point number less than 1000
-Returns the product of the two parameter values
-
-The function will raise an error if one is not a negative integer or if two is not a postive floating point number less than 1000.
