@@ -92,3 +92,20 @@ Given the class definition above write a code fragment that does the following:
 
 **Question 5**
 Write a recursive function ```check_wordle``` that takes as input a wordle word and a guess and returns the number of *green* letters -- that is, the number of letters that are the same letter in the same position in both the wordle word and the guess.
+
+**Question 6**
+
+```python
+class Book:
+  def __init__(self, title, author, num_copies):
+    self.title = title
+    self.author = author
+    self.num_copies = num_copies
+
+  def check_in(self):
+    self.num_copies += 1
+```
+
+(a) Implement a method for the ```Book``` class called ```check_out```. The method will deduct one from the number of copies. The number of copies must never go below 0. Return a boolean value to indicate whether the ```check_out``` was successful or not.
+
+(b) Create an instance of the ```Book``` class and call the ```check_out``` method until the number of copies is 0. Make sure your code correctly handles the situation when the number of copies is 0.
